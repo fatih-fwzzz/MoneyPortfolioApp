@@ -13,18 +13,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-            guard let windowScene = (scene as? UIWindowScene) else { return }
-            
-            let window = UIWindow(windowScene: windowScene)
-            // Switch this out with your actual initial screen later
-            let initialVC = UIViewController()
-            initialVC.view.backgroundColor = .systemMint
-            
-            let navigationController = UINavigationController(rootViewController: initialVC)
-            window.rootViewController = navigationController
-            self.window = window
-            window.makeKeyAndVisible()
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        let window = UIWindow(windowScene: windowScene)
+        if ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil {
+            window.rootViewController = UIViewController()
+        } else {
+            window.rootViewController = AppRootBuilder.buildRootViewController()
         }
+        self.window = window
+        window.makeKeyAndVisible()
+    }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

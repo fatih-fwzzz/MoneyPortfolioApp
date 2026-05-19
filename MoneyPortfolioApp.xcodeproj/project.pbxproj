@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8683ED8CC0C565BEE67C0917 /* Pods_MoneyPortfolioApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FF071B9D139554D370FF53 /* Pods_MoneyPortfolioApp.framework */; };
+		F5D0FBEB2FBC640900F68411 /* transaction_data.json in Resources */ = {isa = PBXBuildFile; fileRef = F5D0FBEA2FBC63FB00F68411 /* transaction_data.json */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		F5D0FB762FBC49DF00F68411 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +29,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03FF071B9D139554D370FF53 /* Pods_MoneyPortfolioApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyPortfolioApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CB8FAEDD5EAB3BFF4F8AAB9 /* Pods-MoneyPortfolioApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyPortfolioApp.release.xcconfig"; path = "Target Support Files/Pods-MoneyPortfolioApp/Pods-MoneyPortfolioApp.release.xcconfig"; sourceTree = "<group>"; };
+		9D4F44DCE4C669127E836E01 /* Pods-MoneyPortfolioApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyPortfolioApp.debug.xcconfig"; path = "Target Support Files/Pods-MoneyPortfolioApp/Pods-MoneyPortfolioApp.debug.xcconfig"; sourceTree = "<group>"; };
 		F5D0FB5F2FBC49DD00F68411 /* MoneyPortfolioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyPortfolioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D0FB752FBC49DF00F68411 /* MoneyPortfolioAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyPortfolioAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D0FB7F2FBC49DF00F68411 /* MoneyPortfolioAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyPortfolioAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D0FBEA2FBC63FB00F68411 /* transaction_data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = transaction_data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -65,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8683ED8CC0C565BEE67C0917 /* Pods_MoneyPortfolioApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,13 +95,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0989064FCD8C4FFD66594FF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03FF071B9D139554D370FF53 /* Pods_MoneyPortfolioApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		889B630B950CC512DFD02DD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D4F44DCE4C669127E836E01 /* Pods-MoneyPortfolioApp.debug.xcconfig */,
+				7CB8FAEDD5EAB3BFF4F8AAB9 /* Pods-MoneyPortfolioApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F5D0FB562FBC49DD00F68411 = {
 			isa = PBXGroup;
 			children = (
+				F5D0FBEA2FBC63FB00F68411 /* transaction_data.json */,
 				F5D0FB612FBC49DD00F68411 /* MoneyPortfolioApp */,
 				F5D0FB782FBC49DF00F68411 /* MoneyPortfolioAppTests */,
 				F5D0FB822FBC49DF00F68411 /* MoneyPortfolioAppUITests */,
 				F5D0FB602FBC49DD00F68411 /* Products */,
+				889B630B950CC512DFD02DD0 /* Pods */,
+				0989064FCD8C4FFD66594FF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5D0FB882FBC49DF00F68411 /* Build configuration list for PBXNativeTarget "MoneyPortfolioApp" */;
 			buildPhases = (
+				B5D109776025727E79964633 /* [CP] Check Pods Manifest.lock */,
 				F5D0FB5B2FBC49DD00F68411 /* Sources */,
 				F5D0FB5C2FBC49DD00F68411 /* Frameworks */,
 				F5D0FB5D2FBC49DD00F68411 /* Resources */,
+				F190ACA589B74170F60D8739 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,8 +156,6 @@
 				F5D0FB612FBC49DD00F68411 /* MoneyPortfolioApp */,
 			);
 			name = MoneyPortfolioApp;
-			packageProductDependencies = (
-			);
 			productName = MoneyPortfolioApp;
 			productReference = F5D0FB5F2FBC49DD00F68411 /* MoneyPortfolioApp.app */;
 			productType = "com.apple.product-type.application";
@@ -147,8 +177,6 @@
 				F5D0FB782FBC49DF00F68411 /* MoneyPortfolioAppTests */,
 			);
 			name = MoneyPortfolioAppTests;
-			packageProductDependencies = (
-			);
 			productName = MoneyPortfolioAppTests;
 			productReference = F5D0FB752FBC49DF00F68411 /* MoneyPortfolioAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -170,8 +198,6 @@
 				F5D0FB822FBC49DF00F68411 /* MoneyPortfolioAppUITests */,
 			);
 			name = MoneyPortfolioAppUITests;
-			packageProductDependencies = (
-			);
 			productName = MoneyPortfolioAppUITests;
 			productReference = F5D0FB7F2FBC49DF00F68411 /* MoneyPortfolioAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -225,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5D0FBEB2FBC640900F68411 /* transaction_data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +270,52 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5D109776025727E79964633 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyPortfolioApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F190ACA589B74170F60D8739 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoneyPortfolioApp/Pods-MoneyPortfolioApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoneyPortfolioApp/Pods-MoneyPortfolioApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoneyPortfolioApp/Pods-MoneyPortfolioApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F5D0FB5B2FBC49DD00F68411 /* Sources */ = {
@@ -284,6 +357,7 @@
 /* Begin XCBuildConfiguration section */
 		F5D0FB892FBC49DF00F68411 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D4F44DCE4C669127E836E01 /* Pods-MoneyPortfolioApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,6 +389,7 @@
 		};
 		F5D0FB8A2FBC49DF00F68411 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CB8FAEDD5EAB3BFF4F8AAB9 /* Pods-MoneyPortfolioApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -382,7 +457,7 @@
 				DEVELOPMENT_TEAM = T9H83KAQ83;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -446,7 +521,7 @@
 				DEVELOPMENT_TEAM = T9H83KAQ83;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
