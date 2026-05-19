@@ -1,6 +1,6 @@
 import Foundation
 
-final class TransactionHistoryInteractor: TransactionHistoryInteracting {
+nonisolated final class TransactionHistoryInteractor: TransactionHistoryInteracting {
     private let allocation: AssetAllocation
 
     init(allocation: AssetAllocation) {

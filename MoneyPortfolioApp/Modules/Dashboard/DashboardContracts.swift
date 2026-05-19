@@ -10,7 +10,7 @@ protocol DashboardPresenting {
     func didTapAllocation(at index: Int)
 }
 
-protocol DashboardInteracting {
+nonisolated protocol DashboardInteracting {
     func fetchPortfolio() throws -> Portfolio
 }
 

@@ -1,6 +1,6 @@
 import Foundation
 
-final class DashboardInteractor: DashboardInteracting {
+nonisolated final class DashboardInteractor: DashboardInteracting {
     private let repository: PortfolioRepository
 
     init(repository: PortfolioRepository) {

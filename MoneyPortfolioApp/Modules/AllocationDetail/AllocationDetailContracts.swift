@@ -9,7 +9,7 @@ protocol AllocationDetailPresenting {
     func didTapAllocation(at index: Int)
 }
 
-protocol AllocationDetailInteracting {
+nonisolated protocol AllocationDetailInteracting {
     func getPortfolio() -> Portfolio
 }
 

@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "6C5394AE-BEDE-43AB-906C-044EC477F41C",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:MoneyPortfolioApp.xcodeproj",
+      "identifier" : "F5D0FB5E2FBC49DD00F68411",
+      "name" : "MoneyPortfolioApp"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:MoneyPortfolioApp.xcodeproj",
+        "identifier" : "F5D0FB742FBC49DF00F68411",
+        "name" : "MoneyPortfolioAppTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:MoneyPortfolioApp.xcodeproj",
+        "identifier" : "F5D0FB7E2FBC49DF00F68411",
+        "name" : "MoneyPortfolioAppUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

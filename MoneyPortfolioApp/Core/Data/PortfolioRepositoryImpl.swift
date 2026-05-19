@@ -1,6 +1,6 @@
 import Foundation
 
-final class PortfolioRepositoryImpl: PortfolioRepository {
+nonisolated final class PortfolioRepositoryImpl: PortfolioRepository {
     private let dataSource: TransactionDataProviding
     private let dateParser = DateFormatter()
     private let monthSymbols = Calendar.current.shortMonthSymbols

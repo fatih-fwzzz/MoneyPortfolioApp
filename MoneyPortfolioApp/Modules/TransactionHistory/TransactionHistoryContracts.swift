@@ -8,7 +8,7 @@ protocol TransactionHistoryPresenting {
     func viewDidLoad()
 }
 
-protocol TransactionHistoryInteracting {
+nonisolated protocol TransactionHistoryInteracting {
     func getAllocation() -> AssetAllocation
 }
 

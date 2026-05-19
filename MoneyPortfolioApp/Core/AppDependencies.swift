@@ -1,6 +1,6 @@
 import Foundation
 
-final class AppDependencies {
+nonisolated final class AppDependencies {
     static let shared = AppDependencies()
 
     let portfolioRepository: PortfolioRepository

@@ -1,6 +1,6 @@
 import Foundation
 
-protocol PortfolioRepository {
+nonisolated protocol PortfolioRepository {
     func fetchPortfolio() throws -> Portfolio
 }
 

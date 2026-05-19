@@ -1,10 +1,10 @@
 import Foundation
 
-protocol TransactionDataProviding {
+nonisolated protocol TransactionDataProviding {
     func loadSections() throws -> [TransactionSectionDTO]
 }
 
-final class TransactionDataLocalDataSource: TransactionDataProviding {
+nonisolated final class TransactionDataLocalDataSource: TransactionDataProviding {
     enum DataSourceError: LocalizedError {
         case fileNotFound
         case invalidFormat

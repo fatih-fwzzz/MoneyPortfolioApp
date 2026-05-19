@@ -55,6 +55,7 @@ final class DashboardViewController: UIViewController, DashboardView {
     }
 
     func show(errorMessage: String) {
+        guard viewIfLoaded?.window != nil else { return }
         let alert = UIAlertController(title: "Failed to load", message: errorMessage, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))
         present(alert, animated: true)
